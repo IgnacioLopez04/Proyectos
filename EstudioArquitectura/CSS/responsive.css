@@ -1,0 +1,186 @@
+/*------------ 1700px-------------*/
+
+@media screen and (max-width: 1700px) {
+    .plano{
+        width: 500px;
+        height: 250px;
+        margin-top: 2em;
+    }
+
+    .descripcion_der > div, .descripcion_izq > div{
+        width: 75%;
+    }
+
+    .proyecto_der, .proyecto_izq{
+        width: 90em;
+    }
+
+    .contenido1, .contenido2, .contenido3, .contenido4{
+        left: 30.5%;
+    }
+}
+
+/*------------ 1650px-------------*/
+
+@media screen and (max-width: 1650px) {
+    .plano{
+        width: 450px;
+        height: 200px;
+        margin-top: 2em;
+    }
+
+    .descripcion_der > div, .descripcion_izq > div{
+        width: 80%;
+    }
+
+}
+
+/*------------ 1600px-------------*/
+
+@media screen and (max-width: 1600px) {
+    .contenido1, .contenido2, .contenido3, .contenido4{
+        left: 29.8%;
+    }
+}
+
+
+/*------------ 1550px-------------*/
+
+@media screen and (max-width: 1550px) {
+    .plano{
+        width: 400px;
+        height: 200px;
+        margin-top: 2em;
+    }
+
+    .proyecto_der, .proyecto_izq{
+        width: 80em;
+    }
+
+    .contenido1, .contenido2, .contenido3, .contenido4{
+        left: 29%;
+        width: 220px;
+    }
+}
+
+/*------------ 1500px-------------*/
+
+@media screen and (max-width: 1500px) {
+    .plano{
+        width:350px;
+        height: 150px;
+        margin-top: 1em;
+    }
+
+    .flork1 img, .flork2 img, .flork3 img, .flork4 img{
+        max-width: 16em;
+    }
+
+    #nosotros .box1:hover .flork1, #nosotros .box2:hover .flork2, #nosotros .box3:hover .flork3, #nosotros .box4:hover .flork4{
+        transform: translatex(-8rem);
+    }
+    
+    #nosotros .box1:hover .contenido1, #nosotros .box2:hover .contenido2, #nosotros .box3:hover .contenido3, #nosotros .box4:hover .contenido4{
+        transform: translateX(9rem);
+    }
+
+}
+
+/*------------ 1450px-------------*/
+
+@media screen and (max-width: 1450px) {
+    .plano{
+        width:300px;
+        height: 120px;
+        margin-top: 1em;
+    }
+
+    .descripcion_der > div, .descripcion_izq > div{
+        padding: 0;
+        margin: 20px .8em 20px .5em;
+    }
+
+    .descripcion_izq ul, .descripcion_der ul{
+        margin: 20px 0;
+        padding: 0 10px 0 30px;
+    }
+
+    .proyecto_der, .proyecto_izq{
+        width: 70em;
+    }
+}
+
+/*------------ 1400px-------------*/
+
+@media screen and (max-width: 1400px) {
+
+    .flork1 img, .flork2 img, .flork3 img, .flork4 img{
+        max-width: 14em;
+    }
+
+    #nosotros .box1:hover .flork1, #nosotros .box2:hover .flork2, #nosotros .box3:hover .flork3, #nosotros .box4:hover .flork4{
+        transform: translatex(-8rem);
+    }
+    
+    #nosotros .box1:hover .contenido1, #nosotros .box2:hover .contenido2, #nosotros .box3:hover .contenido3, #nosotros .box4:hover .contenido4{
+        transform: translateX(7rem);
+    }
+
+    .contenido1, .contenido2, .contenido3, .contenido4{
+        width: 200px;
+    }
+
+}
+
+/*------------ 1300px-------------*/
+
+@media screen and (max-width: 1300px) {
+    .flork1 img, .flork2 img, .flork3 img, .flork4 img{
+        max-width: 12em;
+    }
+
+    #nosotros .box1:hover .flork1, #nosotros .box2:hover .flork2, #nosotros .box3:hover .flork3, #nosotros .box4:hover .flork4{
+        transform: translatex(-7rem);
+    }
+    
+    #nosotros .box1:hover .contenido1, #nosotros .box2:hover .contenido2, #nosotros .box3:hover .contenido3, #nosotros .box4:hover .contenido4{
+        transform: translateX(6rem);
+    }
+
+    .contenido1, .contenido2, .contenido3, .contenido4{
+        width: 200px;
+    }
+
+}
+
+/*------------ 1150px-------------*/
+
+@media screen and (max-width:1150px){
+    .cont_proyectos_der, .cont_proyectos_izq{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .proyecto_izq, .proyecto_der{
+        width: 90%;
+    }
+
+    .descripcion_der > div, .descripcion_izq > div{
+        padding: 0;
+        margin: 20px .8em 20px .5em;
+
+        width: 120%;
+    }
+
+    #nosotros .box1:hover .flork1, #nosotros .box2:hover .flork2, #nosotros .box3:hover .flork3, #nosotros .box4:hover .flork4{
+        transform: translatex(-6rem);
+    }
+    
+    #nosotros .box1:hover .contenido1, #nosotros .box2:hover .contenido2, #nosotros .box3:hover .contenido3, #nosotros .box4:hover .contenido4{
+        transform: translateX(6rem);
+    }
+
+    .contenido1, .contenido2, .contenido3, .contenido4{
+        width: 180px;
+    }
+}

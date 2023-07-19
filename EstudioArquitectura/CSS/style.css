@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Nav*/
+header{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 75px;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.5);
+    background-color: #CBCBCB;
+}
+
+header nav{
+    display: flex;
+}
+
+header h1{
+    display: flex;
+    flex: 1;
+
+    margin: 0px 20px;
+}
+
+header nav ul{
+    display: flex;
+    margin: 10px 20px;
+}
+
+header nav ul li{
+    margin-left: 10px;
+    list-style: none;
+}
+
+header nav ul li:not(:last-child):after{
+    content: " | ";
+    margin-left: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+}
+/*Main*/
+/*Galeria*/
+
+#galeria{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+}
+
+#galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+#galeria img:hover{
+    width: 80%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*Proyectos importantes*/
+#proy_importantes{
+    display: flex;
+}
+
+#proy_importantes div{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+
+    margin: 10px;
+}
+
+#proy_importantes img{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+#proy1, #proy3{
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+#proy2{
+    aspect-ratio: 3/4;
+}
+
+#proy_importantes div h2{
+    background-color: #CBCBCB;
+    border-radius: 10px;
+}
+
+#proy_importantes div h2, #proy_importantes div p{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+/*Slides*/
+
+.cont_proyectos_izq{
+    display: flex;
+    background-color: #CBCBCB;
+    margin: 1em;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+.cont_proyectos_der{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em;
+    box-shadow:0px 0px 10px 2px rgba(0,0,0,0.3);
+}
+
+.proyecto_izq, .proyecto_der{
+    width: 100em;
+    margin: 0.5em 2em;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.proyecto_izq img, .proyecto_der img{
+    max-width: calc(100%/2);
+    width: auto;
+    height: auto;
+}
+
+.proyecto_izq .grande_izq1, .proyecto_der .grande_der2,.proyecto_izq .grande_izq3, .proyecto_der .grande_der4{
+    width: 200%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    transition: all 0.2s ease;
+    transform: translateX(0%);
+}
+
+.proyecto_izq .puntos_izq1, .proyecto_der .puntos_der2, .proyecto_izq .puntos_izq3, .proyecto_der .puntos_der4{
+    width: 100%;
+    padding: .4em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto_izq .punto_izq1, .proyecto_der .punto_der2,.proyecto_izq .punto_izq3, .proyecto_der .punto_der4{
+    width: 1em;
+    height: 1em;
+    margin: 0 0.5em;
+    margin-top: 0.5em;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.proyecto_izq .punto_izq1.activo, .proyecto_der .punto_der2.activo, .proyecto_izq .punto_izq3.activo, .proyecto_der .punto_der4.activo{
+    background-color: orange;
+}
+
+.descripcion_izq{
+    display: flex;
+    flex-flow: row nowrap;
+
+    width: 80%;
+}
+
+.texto{
+    display: block;
+}
+
+.plano{
+    display: flex;
+
+    width: auto;
+    margin-top: 3em;
+
+    min-width: 200px;
+}
+
+.descripcion_der{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+
+    width: 80%;
+}
+
+.descripcion_izq > div, .descripcion_der > div {
+    margin: 20px 10px 20px 1em;
+    padding: 0 1em;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    text-indent: 1.5em;
+    text-align: justify;
+
+
+}
+
+.descripcion_izq ul, .descripcion_der ul{
+    margin: 20px;
+}
+
+.descripcion_izq ul li, .descripcion_der ul li{
+    list-style: circle;
+}
+
+/*Nosotros*/
+
+#nosotros{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #CBCBCB;
+}
+
+#nosotros .box1, #nosotros .box2, #nosotros .box3, #nosotros .box4{
+    position: relative;
+    width: 35%;
+    height: 40vh;
+    margin: 1.5rem 3rem;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+
+    background-color: white;
+}
+
+.contenido1, .contenido2, .contenido3, .contenido4{
+    position: absolute;
+    top: 30%;
+    left: 33.4%;
+
+    width: 250px;
+    transition: all 0.5s ease-in-out;
+}
+
+#nosotros .box1:hover .flork1, #nosotros .box2:hover .flork2, #nosotros .box3:hover .flork3, #nosotros .box4:hover .flork4{
+    transform: translatex(-7rem);
+}
+
+#nosotros .box1:hover .contenido1, #nosotros .box2:hover .contenido2, #nosotros .box3:hover .contenido3, #nosotros .box4:hover .contenido4{
+    transform: translateX(10.5rem);
+}
+
+.flork1, .flork2, .flork3, .flork4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flork1 img, .flork2 img, .flork3 img, .flork4 img{
+    max-width: 20em;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    resize: both;
+}
+
+/*Footer*/
+
+footer{
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    background-color: #CBCBCB;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+#datos{
+    flex: 1;
+    flex-direction: column;
+}
+
+#redes a{
+    background: url(../Imagenes/sprite2.png) no-repeat -53px -45px;
+    overflow: hidden;
+    text-indent: -200px;
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+    margin-left: 8px;
+    border-radius: 50px;
+}
+
+#redes #fb:hover{
+    background-position: -53px -11.6px;
+}
+
+#redes #ig:hover{
+    background-position: -90px -11.6px;
+}
+
+#redes #ig{
+    background-position: -90px -45px;
+}
+
+#redes #pt:hover{
+    background-position: -164px -11.6px;
+}
+
+#redes #pt{
+    background-position: -164px -45px;
+}
+
+#redes #tk:hover{
+    background-position: -240px -88px;
+}
+
+#redes #tk{
+    background-position: -240px -121px;
+}
+
+
+
+
