@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF6F1;
+}
+
+.calculadora{
+    min-height: 360px;
+    max-height: 500px;
+    min-width: 405px;
+    max-width: 450px;
+    width: 45%;
+    height: 70%;
+
+    display:flex;
+    flex-direction: column;
+
+    border:2px solid black;
+    border-radius: 20px;
+
+    background-color: #B3B1AE;
+}
+
+.contenedor-pantalla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
+
+    height: 20%;
+}
+
+#pantalla{
+    width: 100%;
+    height: 100%;
+    
+    border: 2px solid black;
+    background-color: #FAFAF6;
+
+    font-size: 30px;
+    padding: 5px;
+    word-wrap: break-word;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-botones{
+    flex-grow: 1;
+    padding: 10px;
+
+    display: grid;
+    grid-template-rows: 25% 25% 25% 1fr;
+    grid-template-columns: 20% 20% 20% 1fr 1fr;
+    grid-gap: 5px 5px;
+}
+
+.botones, #igual, #borrar, #eliminar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #CBCBCB;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+}
+
+#igual:last-child{
+    grid-column: 4/6;
+    background-color: #A32626;
+}
+
+.botones:nth-child(17){
+    grid-column: 2/4;
+}
+
+#borrar:nth-child(4), #eliminar:nth-child(5){
+    background-color: #A32626;
+}
+
+.botones:hover{
+    border: 2px solid #A32626;
+}
+
+#borrar:nth-child(4):hover, #eliminar:nth-child(5):hover, #igual:last-child:hover{
+    border: 2px solid black;
+}
