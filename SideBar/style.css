@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.nav{
+    position: relative;
+
+    width: 0;
+    height: 100vh;
+    box-shadow: 0px 0px 10px black;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 10px;
+    background-color: #E3E3E3;
+    transition: ease-in-out 0.5s;
+
+    overflow: hidden;
+    padding: 0;
+}
+
+.nav:first-child(){
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E3E3E3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 0px 0px 10px black;
+    transition: ease-in-out 0.5s;
+}
+
+.tittle{
+    padding: 20px;
+    font-size: 36px;
+}
+
+.tittle span{
+    color:#38B4C7;
+}
+
+.links{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.links li{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.links a:hover{
+    color: #38B4C7;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.social-media li{
+    padding: 5px;
+}
+
+.social-media a{
+    background: url(Sprite.png) no-repeat 0 -78px;
+    overflow: hidden;
+    text-indent: 100px;
+    display: inline-block;
+
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+}
+
+#fb:hover{
+    background-position: 0 -39px;
+}
+
+#tw:hover{
+    background-position: -312px -39px;
+}
+
+#tw{
+    background-position: -312px -78px;
+}
+#yt:hover{
+    background-position: -390px -39px;
+}
+#yt{
+    background-position: -390px -78px;
+}
+#pt:hover{
+    background-position: -195px -39px;
+}
+
+#pt{
+    background-position: -195px -78px;
+}
+
+/*----------------Responsive------------------*/
+
+
+/* ------------------Menu-------------------- */
+
+.rotate-menu{
+    left: 325px;
+    transform: rotate(270deg);
+}
+
+.show-nav{
+    width: 300px;
+    padding: 10px
+}
+
+.show{
+    width: 100%;
+}
